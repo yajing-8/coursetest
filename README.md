@@ -9,8 +9,8 @@ coursetes - src - main(test和main包结构对应)
 │  
 ├─string                    字符串相关练习
 │    │ 
-│    ├─TestHuiWenNum       字符串的反转(多种实现方式):StringBuilder:reverse()
-│    ├─TestXiXueGuiNum     判断两个数组完全相同：Array.sort() Arrays.equals()
+│    ├─TestHuiWenNum       回文数字：字符串的反转(多种实现方式):StringBuilder:reverse()
+│    ├─TestXiXueGuiNum     吸血鬼数字：判断两个数组完全相同：Array.sort() Arrays.equals()
 │                           
 │      
 ├─workflow                  控制流程相关练习
