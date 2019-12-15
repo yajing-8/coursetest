@@ -35,7 +35,9 @@ public class TestHuiWenNum {
     public void test(){
         //Integer num = null; //此时调用方法报空指针异常，因为x = num,num.intValue()有个自动拆箱，所以num为空会报空指针异常
         int num = 10;
-        System.out.println("数字"+num+"是回文数字："+isPalindrome(num));
+      //  System.out.println("数字"+num+"是回文数字："+isPalindrome(num));
+        //String的格式化输出：%s：字符串 %d：数字 %b:boolean  %c:字符 %f：浮点数
+        System.out.println(String.format("数字%d是回文数字：%b",num,isPalindrome(num)));
         //或者使用断言判断测试结果
         Assert.assertEquals(false,isPalindrome(num));
     }

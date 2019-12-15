@@ -43,7 +43,7 @@ public class MyArrayUtils {
      * @param arr
      * @return
      */
-    public static int[] bubbleSortBetter(int[] arr){
+    public static Integer[] bubbleSortBetter(Integer[] arr){
         long start = System.currentTimeMillis();
         //i控制需要比较几趟
         for (int i = 0; i < arr.length - 1; i++) {
@@ -79,8 +79,7 @@ public class MyArrayUtils {
      * @param right 最大数组索引：arr.length - 1
      * @return
      */
-    public static int[] quickSort(int[] arr,int left,int right){
-        long start = System.currentTimeMillis();
+    public static Integer[] quickSort(Integer[] arr,int left,int right){
         if (left < right){
             //移动的指向小于key元素的指针下标
             int low = left;
@@ -115,8 +114,13 @@ public class MyArrayUtils {
 
 
     public static void main(String[] args) {
-        int []num = {1,6,2,8,9,20,54,23,20,56,35};
-        System.out.println("冒泡排序后结果："+ Arrays.toString(bubbleSortBetter(num)));
-        System.out.println("快排结果："+ Arrays.toString(quickSort(num,0,num.length-1)));
+        Integer []nums = {1,6,2,8,9,20,54,23,20,56,35};
+        System.out.print("遍历前数组：");
+        Arrays.asList(nums).stream().forEach(num -> {
+            System.out.print(num+" ");
+        });
+        System.out.println();
+        System.out.println("冒泡排序后结果："+ Arrays.toString(bubbleSortBetter(nums)));
+        System.out.println("快排后结果："+ Arrays.toString(quickSort(nums,0,nums.length-1)));
     }
 }
