@@ -25,6 +25,7 @@ public class TestXunHuan {
      */
     @Test
     public void testOne(){
+        String str = new String ();
         int num;
         while ((num = new Random().nextInt(1001) )% 30 != 0){
             System.out.println("1000以内不能被30整除的随机数比如："+num);
